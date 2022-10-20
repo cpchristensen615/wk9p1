@@ -7,7 +7,7 @@ using namespace std;
 void printMatrix(double grades[60][7], int nRows, int nCols);
 void printLabels(string title);
 void assignAvgGrd(double grades[60][7], int nRows);
-void assignWgtGrd(double grades[60][7], int nRows)
+void assignWgtGrd(double grades[60][7], int nRows);
 
 int main() {
   const int nRows = 60;
