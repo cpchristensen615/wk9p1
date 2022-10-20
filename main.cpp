@@ -20,26 +20,20 @@ int main() {
                            {4, 64, 74, 84, 94},
                            {5, 94, 84, 74, 64} };
 
-  for (int row = 5; row < nRows; row++){
-    for (int col = 1; col < 5; col++){
-      int temp;
-      cin >> temp;
-      grades[row][0] = (row + 1);
-      grades[row][col] = temp;
-    }
-  } 
-
-
-
+  /*  for (int row = 5; row < nRows; row++){
+        for (int col = 1; col < 5; col++){
+          int temp;
+          cin >> temp;
+          grades[row][0] = (row + 1);
+          grades[row][col] = temp;
+        }
+      }  */ 
   
   assignAvgGrd(grades, nRows);
   assignWgtGrd(grades, nRows);
   printLabels(title);
   printMatrix(grades, nRows, nCols); 
 }
-
-
-
 
 /************** FUNCTIONS **************/
 void printMatrix(double grades[60][7], int nRows, int nCols){
